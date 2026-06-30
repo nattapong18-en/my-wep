@@ -1,9 +1,12 @@
+นี่คือโค้ดที่อัปเดตแล้วครับ โดยดึงรูปโปรไฟล์จาก GitHub ของคุณมาแสดงอัตโนมัติ เพิ่มส่วนแนะนำตัวที่เข้ากับสาย Computer Engineering และจัดรูปแบบรหัสนักศึกษาให้ดูสวยงามตามแบบที่คุณต้องการครับ:
+
+```html
 <!DOCTYPE html>
 <html lang="th">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Computer Engineering - Nattapong</title>
+<title>Computer Engineering</title>
 
 <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;600&family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
 
@@ -39,7 +42,7 @@
     .card {
         background: var(--card-bg);
         padding: 50px 40px 40px 40px;
-        width: 340px;
+        width: 380px;
         border-radius: 12px;
         text-align: center;
         position: relative;
@@ -78,55 +81,71 @@
     .dot.yellow { background: #ffbd2e; }
     .dot.green { background: #27c93f; }
 
-    .avatar {
-        width: 90px;
-        height: 90px;
-        margin: 10px auto 20px;
+    img.avatar {
+        width: 110px;
+        height: 110px;
+        margin: 15px auto 20px;
         border-radius: 50%;
-        background: linear-gradient(135deg, var(--neon-pink), var(--neon-cyan));
-        color: var(--card-bg);
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-size: 36px;
-        font-weight: 800;
-        box-shadow: 0 0 20px rgba(255, 126, 219, 0.4);
-        border: 4px solid var(--card-bg);
+        object-fit: cover;
+        border: 3px solid var(--neon-cyan);
+        box-shadow: 0 0 25px rgba(54, 249, 246, 0.4);
+        display: block;
     }
 
     h1 {
         font-size: 24px;
         font-weight: 600;
         letter-spacing: 0.5px;
+        margin-bottom: 12px;
+    }
+
+    .bio {
+        font-size: 13px;
+        color: #b0a8ba;
+        line-height: 1.6;
+        margin-bottom: 25px;
+        padding: 0 10px;
+    }
+
+    .id-section {
+        margin-bottom: 25px;
+    }
+
+    .id-label {
+        display: block;
+        font-family: 'Fira Code', monospace;
+        font-size: 11px;
+        color: var(--neon-cyan);
+        letter-spacing: 1.5px;
         margin-bottom: 8px;
     }
 
-    p {
+    .student-id {
         font-family: 'Fira Code', monospace;
-        color: var(--neon-cyan);
-        font-size: 14px;
-        background: rgba(54, 249, 246, 0.1);
+        color: var(--neon-pink);
+        font-size: 15px;
+        background: rgba(255, 126, 219, 0.1);
         display: inline-block;
-        padding: 6px 12px;
+        padding: 8px 18px;
         border-radius: 6px;
-        border: 1px solid rgba(54, 249, 246, 0.2);
+        border: 1px solid rgba(255, 126, 219, 0.3);
     }
 
     .badges {
         display: flex;
         justify-content: center;
         gap: 8px;
-        margin-top: 18px;
+        margin-top: 10px;
     }
 
     .badge {
         font-family: 'Fira Code', monospace;
         font-size: 11px;
-        padding: 4px 8px;
+        padding: 5px 10px;
         border-radius: 4px;
-        background: rgba(255, 126, 219, 0.1);
-        color: var(--neon-pink);
-        border: 1px solid rgba(255, 126, 219, 0.2);
+        background: rgba(54, 249, 246, 0.1);
+        color: var(--neon-cyan);
+        border: 1px solid rgba(54, 249, 246, 0.2);
     }
 
     a {
@@ -180,10 +199,18 @@
         <div class="dot green"></div>
     </div>
 
-    <div class="avatar">N</div>
+    <img src="https://github.com/nattapong18-en.png" alt="Profile Avatar" class="avatar">
     
     <h1>Nattapong Sangsana</h1>
-    <p>664110310060</p>
+    
+    <div class="bio">
+        Computer Engineering student specializing in low-level systems, networks, and kernel engineering. Passionate about efficient and scalable architectures.
+    </div>
+
+    <div class="id-section">
+        <span class="id-label">STUDENT ID:</span>
+        <div class="student-id">664110310060</div>
+    </div>
 
     <div class="badges">
         <span class="badge">Linux</span>
@@ -199,3 +226,5 @@
 
 </body>
 </html>
+
+```
